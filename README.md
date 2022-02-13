@@ -2,11 +2,31 @@
 
 Integration of [node-canvas](https://github.com/Automattic/node-canvas) and [headless-gl](https://github.com/stackgl/headless-gl).
 
-## Installation dependencies
+## Installation
+
+### System Dependencies
 
 You will need to install some system packages in order to compile the required dependencies. Take a look here:
 
 https://www.npmjs.com/package/gl#user-content-system-dependencies
+
+### Xvfb
+
+On headless systems, you'll also have to make sure to install Xvfb and to have it running in the background.
+
+You can use this systemd service to make sure Xvfb is always running:
+
+```systemd
+[Unit]
+Description=X Virtual Frame Buffer Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/Xvfb :99 -screen 0 1024x768x24
+
+[Install]
+WantedBy=multi-user.target
+```
 
 ## Demos:
 
