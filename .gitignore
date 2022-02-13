@@ -1,6 +1,53 @@
+# IDE files
+*.komodo*
+*.sublime*
+.idea/
+
+## OS specific files
 .DS_Store
-.docz
-dist
-node_modules
-yarn.lock
+.DS_Store?
+.fuse*
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+npm-debug.log
+v8.log
+*.cpuprofile
+callgrind*
+*.wtf-trace
+deoptigate/
+*.0x/
+
+# Dependencies
+node_modules/
+
+# Coverage directory used by istanbul
+.nyc_output/
+coverage/
+
+# Coveralls contains private info
+.coveralls.yml
+
+# This can contain the private token
+# (This is NOT .codecov.yml)
+codecov.yml
+
+# The generated client file
+client-file.js
+client-file-common.js
+
+# Locks
 package-lock.json
+npm-shrinkwrap.json
+yarn.lock
+
+# Others
+*.bin
+
+# Ignore test files
+scratch*
+log.json

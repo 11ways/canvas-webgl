@@ -1,6 +1,12 @@
-# node-canvas-webgl
+# canvas-webgl
 
 Integration of [node-canvas](https://github.com/Automattic/node-canvas) and [headless-gl](https://github.com/stackgl/headless-gl).
+
+## Installation dependencies
+
+You will need to install some system packages in order to compile the required dependencies. Take a look here:
+
+https://www.npmjs.com/package/gl#user-content-system-dependencies
 
 ## Demos:
 
